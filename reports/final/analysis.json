@@ -1,0 +1,409 @@
+{
+  "schema_version": 1,
+  "audit_passed": true,
+  "checks": [
+    {
+      "name": "all_logged_metrics_finite",
+      "status": "pass",
+      "details": {
+        "nonfinite_fields": []
+      }
+    },
+    {
+      "name": "recorded_token_accounting",
+      "status": "pass",
+      "details": "Each recorded token count must match optimizer updates times global token batch."
+    },
+    {
+      "name": "final_training_budget_complete",
+      "status": "pass",
+      "details": {
+        "expected_step": 19074,
+        "expected_processed_tokens": 10000269312
+      }
+    },
+    {
+      "name": "final_sampled_validation_recorded",
+      "status": "pass",
+      "details": {
+        "last_validation_step": 19074,
+        "expected_step": 19074
+      }
+    },
+    {
+      "name": "training_records_ordered_unique",
+      "status": "pass",
+      "details": "Recorded updates must form one ordered trajectory with no duplicate steps."
+    },
+    {
+      "name": "completed_training_session",
+      "status": "pass",
+      "details": "A completed session must independently record the expected final update."
+    },
+    {
+      "name": "heldout_evaluation_finite",
+      "status": "pass",
+      "details": []
+    },
+    {
+      "name": "exact_heldout_coverage",
+      "status": "pass",
+      "details": {
+        "expected_windows": 97654,
+        "expected_scored_tokens": 99997696,
+        "expected_unscored_tail": 127
+      }
+    },
+    {
+      "name": "heldout_perplexity_matches_loss",
+      "status": "pass",
+      "details": "Perplexity must be exp(mean negative log likelihood in nats per target token)."
+    },
+    {
+      "name": "heldout_reference_protocol_matches",
+      "status": "pass",
+      "details": "Reference and trained checkpoint must use identical complete held-out protocols."
+    },
+    {
+      "name": "best_checkpoint_matches_validation_selection",
+      "status": "pass",
+      "details": {
+        "selected_step": 19000,
+        "minimum_sampled_validation_step": 19000
+      }
+    },
+    {
+      "name": "hellaswag_comparable_complete_sweeps",
+      "status": "pass",
+      "details": "Both models must score all 10,042 questions using the same dataset and protocol."
+    },
+    {
+      "name": "hellaswag_trained_model_sum_counts",
+      "status": "pass",
+      "details": "Reported accuracy must equal the exact integer success count divided by questions."
+    },
+    {
+      "name": "hellaswag_trained_model_token_normalized_counts",
+      "status": "pass",
+      "details": "Reported accuracy must equal the exact integer success count divided by questions."
+    },
+    {
+      "name": "hellaswag_trained_model_character_normalized_counts",
+      "status": "pass",
+      "details": "Reported accuracy must equal the exact integer success count divided by questions."
+    },
+    {
+      "name": "hellaswag_released_gpt2_sum_counts",
+      "status": "pass",
+      "details": "Reported accuracy must equal the exact integer success count divided by questions."
+    },
+    {
+      "name": "hellaswag_released_gpt2_token_normalized_counts",
+      "status": "pass",
+      "details": "Reported accuracy must equal the exact integer success count divided by questions."
+    },
+    {
+      "name": "hellaswag_released_gpt2_character_normalized_counts",
+      "status": "pass",
+      "details": "Reported accuracy must equal the exact integer success count divided by questions."
+    },
+    {
+      "name": "hellaswag_uses_selected_checkpoint",
+      "status": "pass",
+      "details": "HellaSwag and the complete held-out sweep must describe the same selected checkpoint."
+    },
+    {
+      "name": "hellaswag_checkpoint_hash_matches_inventory",
+      "status": "pass",
+      "details": "The evaluator's checkpoint digest must equal the exported checkpoint inventory."
+    },
+    {
+      "name": "sample_suite_checkpoint_and_settings",
+      "status": "pass",
+      "details": {
+        "samples": 5
+      }
+    },
+    {
+      "name": "exported_artifact_hashes",
+      "status": "pass",
+      "details": {
+        "mismatched_files": []
+      }
+    },
+    {
+      "name": "retained_executed_sources_match_training",
+      "status": "pass",
+      "details": {
+        "expected_files": 12,
+        "archive_files": 12,
+        "missing_files": [],
+        "unlisted_files": [],
+        "duplicate_files": [],
+        "mismatched_files": [],
+        "archive_error": null,
+        "scope": {
+          "selection": "Retained executed Python modules",
+          "original_module_count": 15,
+          "retained_module_count": 12,
+          "omitted_operational_module_count": 3,
+          "retained_source_bytes_unchanged": true
+        },
+        "scope_counts_match_manifest": true
+      }
+    }
+  ],
+  "source_files_sha256": {
+    "manifest.json": "1c05dfed1cba878090890bd5fab074e5cf63068a4c8464d624ca993667c7dd5a",
+    "metrics.jsonl": "cd645a4f94e6e6a05ffb8e842a0d2e5a23a52ab4dfdcd07a9230e68362f49ddd",
+    "sessions.jsonl": "749126ec15d804a97be03c398ea86ac246294a0b7f72468f62226631a74ce282",
+    "evaluation.json": "1b78cb5dffb697388805fe51d2a3338206e883477d3af565d703c8e59e23be12",
+    "reference_evaluation.json": "1e51dd6fcb01c0dd6b4a9d007ae1768be103ec4593eeda84b1b1759fdd429f8b",
+    "hellaswag.json": "6251370b283a213f17be2f680502a23e1b09392e3ffee4d3040e6156aa4ab1b0",
+    "hellaswag_reference.json": "6ae18ee48d373875aead82372c27364d02f56c9506ee5e88ea52c1d4543f1eec",
+    "samples.jsonl": "d9edba6b897ebf60abf03ad27fa288b021faf1fc96f70a3938136cf84f5fe491",
+    "artifacts.json": "058a209025d043ffb67758fa8677eea0079d2556fddceaffe2cd4c5147af1e9e",
+    "provenance/executed-source.zip": "9f51bdcb8010134c6f7ec7f06737f293ee0a505f662145c26c937cfb93032010"
+  },
+  "measurement_scope": {
+    "record_counts": {
+      "val": 26,
+      "train": 1910,
+      "checkpoint": 25
+    },
+    "training_log_interval_updates": 10,
+    "finite_check_scope": "Every numerical field in every available logged record",
+    "not_observed": "Unlogged per-update loss, duration, gradient norm and memory",
+    "processed_tokens_expected": 10000269312,
+    "target_tokens": 10000000000,
+    "expected_updates": 19074
+  },
+  "data_coverage": {
+    "source_documents": 14357844,
+    "training_corpus_tokens": 9900003494,
+    "validation_corpus_tokens": 99997824,
+    "first_epoch_training_input_tokens": 9899868160,
+    "discarded_input_windows_per_epoch": 132,
+    "processed_tokens_beyond_first_epoch": 100401152,
+    "heldout_windows_expected": 97654,
+    "heldout_scored_tokens_expected": 99997696,
+    "heldout_unscored_tail_tokens": 127,
+    "sampled_validation_scored_tokens_per_measurement": 10485760,
+    "training_validation_protocol": "Fixed seeded random windows sampled with replacement",
+    "final_evaluation_protocol": "Contiguous contexts, next-token targets, EOT boundaries unmasked",
+    "split_method": "blake2b document hash",
+    "split_scope": "Exact identical document bytes share a split; no new near-duplicate audit"
+  },
+  "convergence": {
+    "initial_sampled_validation_loss": 10.957042694091797,
+    "final_sampled_validation_loss": 3.268538236618042,
+    "last_training_batch_loss": 3.276296377182007,
+    "full_heldout_minus_final_sampled_loss": -0.001901582039989247,
+    "full_heldout_minus_selected_sampled_loss": -0.0017737896815908094,
+    "sampled_validation_increases": 1,
+    "interpretation": "Individual training batches can fluctuate; monotonicity is not required.",
+    "milestones": [
+      {
+        "target_tokens": 0,
+        "step": 0,
+        "processed_tokens": 0,
+        "sampled_validation_loss": 10.957042694091797,
+        "sampled_validation_perplexity": 57356.57105391164
+      },
+      {
+        "target_tokens": 100000000,
+        "step": 191,
+        "processed_tokens": 100139008,
+        "sampled_validation_loss": 6.3428635597229,
+        "sampled_validation_perplexity": 568.4216925473035
+      },
+      {
+        "target_tokens": 1000000000,
+        "step": 1908,
+        "processed_tokens": 1000341504,
+        "sampled_validation_loss": 3.839794397354126,
+        "sampled_validation_perplexity": 46.5159096624493
+      },
+      {
+        "target_tokens": 2500000000,
+        "step": 4769,
+        "processed_tokens": 2500329472,
+        "sampled_validation_loss": 3.542436122894287,
+        "sampled_validation_perplexity": 34.55098720021842
+      },
+      {
+        "target_tokens": 5000000000,
+        "step": 9537,
+        "processed_tokens": 5000134656,
+        "sampled_validation_loss": 3.3907063007354736,
+        "sampled_validation_perplexity": 29.686912755607647
+      },
+      {
+        "target_tokens": 10000000000,
+        "step": 19074,
+        "processed_tokens": 10000269312,
+        "sampled_validation_loss": 3.268538236618042,
+        "sampled_validation_perplexity": 26.272906487597634
+      }
+    ]
+  },
+  "runtime": {
+    "completed_session_wall_seconds": 6456.0470522381365,
+    "completed_trainer_tokens_per_second": 1548977.142062987,
+    "completed_trainer_timing_scope": "Completed trainer sessions, including their setup, validation and checkpoints; excludes inter-session gaps, separate evaluation and other pod activity",
+    "recorded_validation_seconds": 107.78535934537649,
+    "recorded_checkpoint_seconds": 222.37764877453446,
+    "full_heldout_evaluation_seconds": 164.93837648630142,
+    "reference_heldout_evaluation_seconds": 264.8225138261914,
+    "hellaswag_evaluation_seconds": 14.769276712089777,
+    "hellaswag_reference_evaluation_seconds": 18.636093195527792,
+    "logged_update_tokens_per_second": {
+      "observations": 1909,
+      "minimum": 75818.24404176338,
+      "median": 1660135.708139584,
+      "p05": 1645661.0360335154,
+      "p95": 1673846.2842753741,
+      "maximum": 1705862.4055642798
+    },
+    "throughput_scope": "Logged optimizer updates, excluding validation and checkpoint time",
+    "peak_allocated_cuda_bytes_rank0": 51256031744,
+    "memory_scope": "Rank 0 peak allocated tensors, not total GPU or reserved memory",
+    "logged_preclipping_gradient_norm": {
+      "observations": 1910,
+      "minimum": 0.22720152139663696,
+      "median": 0.27125151455402374,
+      "p05": 0.2503757804632187,
+      "p95": 0.5005866914987561,
+      "maximum": 14.031831741333008
+    },
+    "logged_updates_above_clipping_threshold": 40,
+    "phase_scope": "Reported phase durations only; missing update durations are not extrapolated"
+  },
+  "heldout_comparison": {
+    "trained_model": {
+      "checkpoint": "best.pt",
+      "reference_revision": null,
+      "step": 19000,
+      "training_tokens": 9961472000,
+      "loss": 3.2666366545780527,
+      "perplexity": 26.222993871989598,
+      "scored_tokens": 99997696,
+      "evaluated_windows": 97654,
+      "available_windows": 97654,
+      "complete_window_sweep": true,
+      "unscored_token_tail": 127,
+      "context_length": 1024,
+      "evaluation_protocol": "non-overlapping contexts; one-token-ahead targets; document boundaries unmasked",
+      "tokenizer": "gpt2",
+      "validation_sha256": "72f4cd05c2687f8fe164b188fb41b6d671e6bd3129eafb3ece9c3b29af74924c",
+      "precision": "torch.bfloat16",
+      "seconds": 164.93837648630142
+    },
+    "released_gpt2": {
+      "checkpoint": "openai-community/gpt2",
+      "reference_revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+      "step": null,
+      "training_tokens": null,
+      "loss": 3.478510315517318,
+      "perplexity": 32.4114033303535,
+      "scored_tokens": 99997696,
+      "evaluated_windows": 97654,
+      "available_windows": 97654,
+      "complete_window_sweep": true,
+      "unscored_token_tail": 127,
+      "context_length": 1024,
+      "evaluation_protocol": "non-overlapping contexts; one-token-ahead targets; document boundaries unmasked",
+      "tokenizer": "gpt2",
+      "validation_sha256": "72f4cd05c2687f8fe164b188fb41b6d671e6bd3129eafb3ece9c3b29af74924c",
+      "precision": "torch.bfloat16",
+      "seconds": 264.8225138261914
+    },
+    "loss_difference_model_minus_reference": -0.2118736609392653,
+    "perplexity_ratio_model_to_reference": 0.8090669078629985,
+    "interpretation": "Same held-out corpus and evaluator; lower loss/perplexity is better."
+  },
+  "hellaswag_comparison": {
+    "examples": 10042,
+    "chance_accuracy": 0.25,
+    "interval_method": "Two-sided 95 percent binomial Wilson score interval",
+    "interval_scope": "Question sampling, not training-seed variability or paired significance",
+    "models": {
+      "trained_model": {
+        "sum": {
+          "correct": 2938,
+          "total": 10042,
+          "accuracy": 0.2925712009559849,
+          "wilson_95": {
+            "lower": 0.2837538120476474,
+            "upper": 0.3015472284797177
+          }
+        },
+        "token_normalized": {
+          "correct": 3202,
+          "total": 10042,
+          "accuracy": 0.3188607847042422,
+          "wilson_95": {
+            "lower": 0.30981653480081306,
+            "upper": 0.32804356732077933
+          }
+        },
+        "character_normalized": {
+          "correct": 3238,
+          "total": 10042,
+          "accuracy": 0.3224457279426409,
+          "wilson_95": {
+            "lower": 0.3133731799048205,
+            "upper": 0.3316540669796212
+          }
+        }
+      },
+      "released_gpt2": {
+        "sum": {
+          "correct": 2910,
+          "total": 10042,
+          "accuracy": 0.28978291177056364,
+          "wilson_95": {
+            "lower": 0.28099164108007013,
+            "upper": 0.2987349535206344
+          }
+        },
+        "token_normalized": {
+          "correct": 3105,
+          "total": 10042,
+          "accuracy": 0.30920135431189005,
+          "wilson_95": {
+            "lower": 0.3002364563322917,
+            "upper": 0.31831217240051257
+          }
+        },
+        "character_normalized": {
+          "correct": 3129,
+          "total": 10042,
+          "accuracy": 0.31159131647082255,
+          "wilson_95": {
+            "lower": 0.3026063595476949,
+            "upper": 0.32072036569367557
+          }
+        }
+      }
+    }
+  },
+  "selected_checkpoint": {
+    "filename": "best.pt",
+    "step": 19000,
+    "training_tokens": 9961472000,
+    "sampled_validation_loss": 3.2684104442596436,
+    "selection_rule": "Minimum fixed-window validation loss among saved evaluation points",
+    "scope": "Evaluated checkpoint may precede the completed run's last update"
+  },
+  "samples": {
+    "count": 5,
+    "checkpoint": "best.pt",
+    "evaluation_step": 19000,
+    "scope": "Fixed-prompt qualitative examples, not a broad capability benchmark"
+  },
+  "derived_figures": [
+    "heldout_comparison",
+    "hellaswag_uncertainty"
+  ]
+}

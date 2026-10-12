@@ -1,0 +1,19 @@
+{
+  "checkpoint": "openai-community/gpt2",
+  "reference_revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+  "step": null,
+  "training_tokens": null,
+  "loss": 3.478510315517318,
+  "perplexity": 32.4114033303535,
+  "scored_tokens": 99997696,
+  "evaluated_windows": 97654,
+  "available_windows": 97654,
+  "complete_window_sweep": true,
+  "unscored_token_tail": 127,
+  "context_length": 1024,
+  "evaluation_protocol": "non-overlapping contexts; one-token-ahead targets; document boundaries unmasked",
+  "tokenizer": "gpt2",
+  "validation_sha256": "72f4cd05c2687f8fe164b188fb41b6d671e6bd3129eafb3ece9c3b29af74924c",
+  "precision": "torch.bfloat16",
+  "seconds": 264.8225138261914
+}

@@ -1,0 +1,40 @@
+{
+  "storage": "persistent run directory; checkpoint binaries excluded from Git",
+  "files": [
+    {
+      "path": "best.pt",
+      "bytes": 1493526207,
+      "sha256": "abb374e33ac0de7da1d8072f04cb331fb47ec724b3d1cf3406257989a6a332b2"
+    },
+    {
+      "path": "last.pt",
+      "bytes": 1493526207,
+      "sha256": "1894e7ad60478a69e55ae488cc252e2c0f272fef7a71d8e0cae31acfa71001c9"
+    },
+    {
+      "path": "snapshots/step_00000191.pt",
+      "bytes": 497813975,
+      "sha256": "b9927abf822c8f5bd6a3cf9c28fbf68c27e68ab2f6b8e17a66b1f3233cbf24de"
+    },
+    {
+      "path": "snapshots/step_00001908.pt",
+      "bytes": 497813975,
+      "sha256": "152041126205cf6cd6dd051ed99830ac17abb7f569b91ac3cbd4fb10dfd3edbc"
+    },
+    {
+      "path": "snapshots/step_00004769.pt",
+      "bytes": 497813975,
+      "sha256": "3c9cb622a730e46e0de678833beec318f71f03df936d0a7124bebeb2cc2e5a30"
+    },
+    {
+      "path": "snapshots/step_00009537.pt",
+      "bytes": 497813975,
+      "sha256": "ccdfee8da8013d74d7b6501b60c673599016e24808bfc2c0200a09dd7fdbdcdd"
+    },
+    {
+      "path": "snapshots/step_00019074.pt",
+      "bytes": 497813975,
+      "sha256": "cd26c467898e5ca24a34c243db717414970dbc2c5f3cbe75dbe0d844d764809a"
+    }
+  ]
+}

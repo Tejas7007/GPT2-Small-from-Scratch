@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="345" viewBox="0 0 960 345" role="img" aria-labelledby="title desc">
+<title id="title">GPT-2 from scratch</title>
+<desc id="desc">A completed GPT-2 Small training run with 124,439,808 trainable parameters and 10,000,269,312 processed training tokens. 4 H100 80 GB GPUs use bf16 precision. Weights start from random initialization. Text is encoded with the GPT-2 tokenizer.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#989e97"/></marker></defs>
+<rect width="960" height="345" fill="#1d2022"/>
+<text x="36" y="46" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" fill="#babbb5" font-weight="400" text-anchor="start">LANGUAGE MODEL PRETRAINING</text>
+<text x="36" y="112" font-family="DejaVu Sans, Arial, sans-serif" font-size="48" fill="#eeebe5" font-weight="700" text-anchor="start">GPT-2 from scratch</text>
+<text x="36" y="154" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" fill="#babbb5" font-weight="400" text-anchor="start">Trained from random weights on ten billion tokens.</text>
+<path d="M 36 192 H 924" fill="none" stroke="#b9a27e" stroke-width="1"/>
+<text x="36" y="249" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" fill="#eeebe5" font-weight="700" text-anchor="start">124.4M</text>
+<text x="36" y="282" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" fill="#eeebe5" font-weight="400" text-anchor="start">trainable parameters</text>
+<text x="36" y="308" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" fill="#babbb5" font-weight="400" text-anchor="start">GPT-2 Small architecture</text>
+<text x="340" y="249" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" fill="#eeebe5" font-weight="700" text-anchor="start">10.0003B</text>
+<text x="340" y="282" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" fill="#eeebe5" font-weight="400" text-anchor="start">training tokens processed</text>
+<text x="340" y="308" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" fill="#babbb5" font-weight="400" text-anchor="start">Reused GPT-2 tokenizer</text>
+<text x="644" y="249" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" fill="#eeebe5" font-weight="700" text-anchor="start">4 × H100</text>
+<text x="644" y="282" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" fill="#eeebe5" font-weight="400" text-anchor="start">80 GB GPUs</text>
+<text x="644" y="308" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" fill="#babbb5" font-weight="400" text-anchor="start">Distributed bf16 training</text>
+<path d="M 316 217 V 310" fill="none" stroke="#515650" stroke-width="1"/>
+<path d="M 620 217 V 310" fill="none" stroke="#515650" stroke-width="1"/>
+</svg>

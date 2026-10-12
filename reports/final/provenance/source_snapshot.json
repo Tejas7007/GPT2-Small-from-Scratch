@@ -1,0 +1,33 @@
+{
+  "capture_stage": "report_finalization",
+  "files_sha256": {
+    "check_model.py": "81f52ca2e45d30f4099e52c7d2c7000f2c8036718ce344577efd2894b5c687c0",
+    "configs/baseline-8gpu.json": "7d1ca900b7e42c6b559b3cbfd5fd43aa8dbe00ea5fd87f462e1ce4e5a341d99e",
+    "configs/baseline.json": "86614cb2ab6f7ca074ac584a8ed926641e34281e9f417710f797b2e71ea926ba",
+    "configs/h100-4gpu.json": "499dd56ef02f94f70015e7f914ea1e75c1d4d3ab9c79d860614e61825a90e905",
+    "configs/h100-8gpu.json": "f73f5413eb31a8222792bd340a9b5cb2e262282e72e952339e57dca9030bdf5e",
+    "configs/integration.json": "230546bf6b39e245e48dcee3c1cb83a65ca0cf6438e759cd9044ddedd8bc213a",
+    "configs/prompts.json": "436af1827d5d3fbe0916e66cdc5a9720710cec83fe276ba4898d7b78b152c440",
+    "data.py": "03387f50288f544224517ab35f2186bc8d8d23d04b5011500a16e3eb37b649f2",
+    "evaluate.py": "91d19be24818598616f1656182fed463feb54f15025d704cf83242e26d643f4f",
+    "evaluate_hellaswag.py": "94a99d25c8f4e50d393ef27e08a2c7fcc508d138c80102d5dd4f849caae48941",
+    "generate.py": "25415ada90dbde5dbbbfb1aed7c3364bf1d1ce63653d2ae42b6b9540396edf6d",
+    "model.py": "b1feb76a28bba4f27bc6b0c41625145365d5102a17537964fb2bcfce5ea0eae1",
+    "plot_metrics.py": "6e66aad8c90b68ea4a8f2c40248a97b2f70ea1a3de5fe631a13783b1645cbbea",
+    "prepare_data.py": "785924b9105383aa551e03839d5f1b4380332228f251c6114ea1df602b78034f",
+    "pyproject.toml": "3b2b0b295e68b7c2f77a79791ddd73324bcdfa2100dfb46474399e4d6fad4148",
+    "requirements-data.txt": "c8d28461ffe1e467b0c590c04ecdda0f32f6a343fbb523c44ec92a9c256d1c3a",
+    "requirements-dev.txt": "bbcf31810c3ebf6a6864bf0c6d56aa1ec6c8ca3181c944a42eb4f3cb59bd6f31",
+    "requirements-eval.txt": "e9f4196626b99e8805eeff23361b48bc8e1bcc204eedd285bffa6123b360ca5a",
+    "requirements.txt": "aa8ffe61b642fe12b4cc70146626437549ddf98daac76e87be63fc628139aa82",
+    "sample.py": "61ff2e7da78ed404b85a0b67a658e3cc93859ce15eaf8ad37b2b7124b6b805f2",
+    "tokenizer.py": "1b782c8e05bd3ebac4c7638d11291051c31b2431aa176829d1ac7dec3f205795",
+    "train.py": "97bd1581dc3fdef7e5389c6ea909240b5bb38ad70a5346356d5f9df3f43aad10",
+    "verify_gpu_resume.py": "f8269198c45c5f029d3d640f0fd0652a55f96ae48b409ecd3d4df870c63370bf"
+  },
+  "files_changed_since_training_manifest": [
+    "plot_metrics.py"
+  ],
+  "source_selection": "Retained experiment source files",
+  "omitted_operational_file_count": 10
+}

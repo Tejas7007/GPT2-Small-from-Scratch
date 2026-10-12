@@ -1,0 +1,91 @@
+{
+  "args": {
+    "config": "integration.json",
+    "data": "data",
+    "out": "resumed",
+    "model": "tiny",
+    "batch_size": 2,
+    "grad_accum": 2,
+    "tokens": 8192,
+    "lr": 0.0006,
+    "warmup_steps": 0,
+    "weight_decay": 0.1,
+    "eval_interval": 2,
+    "eval_batches": 2,
+    "checkpoint_interval": 100,
+    "log_interval": 1,
+    "seed": 1337,
+    "device": "cuda",
+    "precision": "bf16",
+    "attention": "sdpa",
+    "compile": false,
+    "resume": null,
+    "stop_after": 4,
+    "verify_data": true,
+    "milestone_tokens": [
+      1024,
+      2048
+    ]
+  },
+  "config": {
+    "vocab_size": 257,
+    "block_size": 64,
+    "n_layer": 2,
+    "n_head": 4,
+    "n_embd": 128,
+    "attention": "sdpa"
+  },
+  "parameters": 437888,
+  "data_meta": {
+    "tokenizer": "byte",
+    "vocab_size": 257,
+    "dtype": "<u2",
+    "tokens": {
+      "train": 98535,
+      "val": 1515
+    },
+    "documents": 1124,
+    "sha256": {
+      "train": "b6d483e53760c8675e71d095f4a2841082a3d5a6ab49b22c4eccd202e5b88f7d",
+      "val": "0c4d4a6a8078b10c3d30cf2671ea0083c80e556ae1c1b22a5cc51f8d8745ff25"
+    },
+    "source": "synthetic integration corpus",
+    "hf_config": null,
+    "hf_split": "train",
+    "hf_revision": null,
+    "consumed_parquet_shards": [],
+    "tokenizer_workers": 8,
+    "tokenization_batch_size": 512,
+    "val_fraction": 0.01,
+    "split_method": "blake2b document hash"
+  },
+  "torch_version": "2.8.0+cu128",
+  "device": "cuda:0",
+  "hardware": "NVIDIA H100 80GB HBM3",
+  "precision": "bf16",
+  "world_size": 4,
+  "tokens_per_step": 1024,
+  "total_steps": 8,
+  "actual_warmup_steps": 0,
+  "provenance": {
+    "git_commit": null,
+    "git_dirty": null,
+    "source_sha256": {
+      "check_model.py": "81f52ca2e45d30f4099e52c7d2c7000f2c8036718ce344577efd2894b5c687c0",
+      "data.py": "03387f50288f544224517ab35f2186bc8d8d23d04b5011500a16e3eb37b649f2",
+      "evaluate.py": "91d19be24818598616f1656182fed463feb54f15025d704cf83242e26d643f4f",
+      "generate.py": "25415ada90dbde5dbbbfb1aed7c3364bf1d1ce63653d2ae42b6b9540396edf6d",
+      "model.py": "b1feb76a28bba4f27bc6b0c41625145365d5102a17537964fb2bcfce5ea0eae1",
+      "plot_metrics.py": "a4ff14791eba7864f2b973742c802205cdcf5cffd220c8ab5a61ee29180fe4b4",
+      "prepare_data.py": "4e8c76382e3e38c6db6dd35261f13ed259955288d177cd91bb763e9f35ab2323",
+      "sample.py": "61ff2e7da78ed404b85a0b67a658e3cc93859ce15eaf8ad37b2b7124b6b805f2",
+      "tokenizer.py": "1b782c8e05bd3ebac4c7638d11291051c31b2431aa176829d1ac7dec3f205795",
+      "train.py": "30cf533482145536d322deef980cac26dd774994bd8b938423e19e27f26a0b1c",
+      "verify_gpu_resume.py": "f8269198c45c5f029d3d640f0fd0652a55f96ae48b409ecd3d4df870c63370bf"
+    },
+    "python_version": "3.12.3",
+    "torch_version": "2.8.0+cu128",
+    "source_selection": "Retained experiment source files"
+  },
+  "sampling": "rank-disjoint shuffled fixed-length windows"
+}

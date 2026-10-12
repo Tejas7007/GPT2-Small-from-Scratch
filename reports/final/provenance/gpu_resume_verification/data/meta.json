@@ -1,0 +1,23 @@
+{
+  "tokenizer": "byte",
+  "vocab_size": 257,
+  "dtype": "<u2",
+  "tokens": {
+    "train": 98535,
+    "val": 1515
+  },
+  "documents": 1124,
+  "sha256": {
+    "train": "b6d483e53760c8675e71d095f4a2841082a3d5a6ab49b22c4eccd202e5b88f7d",
+    "val": "0c4d4a6a8078b10c3d30cf2671ea0083c80e556ae1c1b22a5cc51f8d8745ff25"
+  },
+  "source": "synthetic integration corpus",
+  "hf_config": null,
+  "hf_split": "train",
+  "hf_revision": null,
+  "consumed_parquet_shards": [],
+  "tokenizer_workers": 8,
+  "tokenization_batch_size": 512,
+  "val_fraction": 0.01,
+  "split_method": "blake2b document hash"
+}

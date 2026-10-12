@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="575" viewBox="0 0 960 575" role="img" aria-labelledby="title desc">
+<title id="title">One distributed next-token training update</title>
+<desc id="desc">Example tokens show input and target sequences shifted by one position. Each position uses the current and earlier input tokens to predict the next token. Cross entropy scores these predictions against their targets. Four GPUs compute gradients on distinct batches, average them by all-reduce, and apply the same AdamW update. Training predictions are computed in parallel and checkpoints are saved periodically.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#989e97"/></marker></defs>
+<rect width="960" height="575" fill="#1d2022"/>
+<text x="36" y="57" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" fill="#eeebe5" font-weight="700" text-anchor="start">One training update</text>
+<text x="36" y="100" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" fill="#babbb5" font-weight="400" text-anchor="start">Example tokens illustrate next-token training</text>
+<path d="M 36 119 H 924" fill="none" stroke="#b9a27e" stroke-width="1"/>
+<text x="36" y="179" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" fill="#babbb5" font-weight="400" text-anchor="start">Input tokens</text>
+<text x="36" y="281" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" fill="#babbb5" font-weight="400" text-anchor="start">Target tokens</text>
+<rect x="210" y="145" width="118" height="45" fill="#1d2022" stroke="#515650" stroke-width="1"/>
+<text x="269" y="174" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" fill="#eeebe5" font-weight="400" text-anchor="middle">the</text>
+<path d="M 269 204 V 232" fill="none" stroke="#989e97" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="210" y="247" width="118" height="45" fill="#1d2022" stroke="#515650" stroke-width="1"/>
+<text x="269" y="277" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" fill="#eeebe5" font-weight="400" text-anchor="middle">model</text>
+<rect x="349" y="145" width="118" height="45" fill="#1d2022" stroke="#515650" stroke-width="1"/>
+<text x="408" y="174" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" fill="#eeebe5" font-weight="400" text-anchor="middle">model</text>
+<path d="M 408 204 V 232" fill="none" stroke="#989e97" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="349" y="247" width="118" height="45" fill="#1d2022" stroke="#515650" stroke-width="1"/>
+<text x="408" y="277" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" fill="#eeebe5" font-weight="400" text-anchor="middle">learns</text>
+<rect x="488" y="145" width="118" height="45" fill="#1d2022" stroke="#515650" stroke-width="1"/>
+<text x="547" y="174" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" fill="#eeebe5" font-weight="400" text-anchor="middle">learns</text>
+<path d="M 547 204 V 232" fill="none" stroke="#989e97" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="488" y="247" width="118" height="45" fill="#1d2022" stroke="#515650" stroke-width="1"/>
+<text x="547" y="277" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" fill="#eeebe5" font-weight="400" text-anchor="middle">from</text>
+<rect x="627" y="145" width="118" height="45" fill="#1d2022" stroke="#515650" stroke-width="1"/>
+<text x="686" y="174" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" fill="#eeebe5" font-weight="400" text-anchor="middle">from</text>
+<path d="M 686 204 V 232" fill="none" stroke="#989e97" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="627" y="247" width="118" height="45" fill="#1d2022" stroke="#515650" stroke-width="1"/>
+<text x="686" y="277" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" fill="#eeebe5" font-weight="400" text-anchor="middle">text</text>
+<rect x="766" y="145" width="118" height="45" fill="#1d2022" stroke="#515650" stroke-width="1"/>
+<text x="825" y="174" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" fill="#eeebe5" font-weight="400" text-anchor="middle">text</text>
+<path d="M 825 204 V 232" fill="none" stroke="#989e97" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="766" y="247" width="118" height="45" fill="#1d2022" stroke="#515650" stroke-width="1"/>
+<text x="825" y="277" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" fill="#eeebe5" font-weight="400" text-anchor="middle">.</text>
+<text x="36" y="349" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" fill="#babbb5" font-weight="400" text-anchor="start">Each position predicts its next token using only its visible input context</text>
+<path d="M 36 374 H 924" fill="none" stroke="#515650" stroke-width="1"/>
+<text x="36" y="411" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" fill="#babbb5" font-weight="400" text-anchor="start">01</text>
+<text x="36" y="445" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" fill="#eeebe5" font-weight="600" text-anchor="start">Causal forward</text>
+<path d="M 36 457 H 222" fill="none" stroke="#515650" stroke-width="1"/>
+<text x="36" y="489" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" fill="#babbb5" font-weight="400" text-anchor="start">Visible context only</text>
+<text x="264" y="411" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" fill="#babbb5" font-weight="400" text-anchor="start">02</text>
+<text x="264" y="445" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" fill="#eeebe5" font-weight="600" text-anchor="start">Token loss</text>
+<path d="M 264 457 H 450" fill="none" stroke="#515650" stroke-width="1"/>
+<text x="264" y="489" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" fill="#babbb5" font-weight="400" text-anchor="start">Shifted targets</text>
+<text x="492" y="411" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" fill="#babbb5" font-weight="400" text-anchor="start">03</text>
+<text x="492" y="445" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" fill="#eeebe5" font-weight="600" text-anchor="start">Gradient all-reduce</text>
+<path d="M 492 457 H 678" fill="none" stroke="#515650" stroke-width="1"/>
+<text x="492" y="489" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" fill="#babbb5" font-weight="400" text-anchor="start">Four GPU average</text>
+<text x="720" y="411" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" fill="#babbb5" font-weight="400" text-anchor="start">04</text>
+<text x="720" y="445" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" fill="#eeebe5" font-weight="600" text-anchor="start">AdamW update</text>
+<path d="M 720 457 H 906" fill="none" stroke="#515650" stroke-width="1"/>
+<text x="720" y="489" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" fill="#babbb5" font-weight="400" text-anchor="start">Synchronized replicas</text>
+<path d="M 36 519 H 924" fill="none" stroke="#515650" stroke-width="1"/>
+<text x="36" y="555" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" fill="#babbb5" font-weight="400" text-anchor="start">Training predictions are parallel</text>
+<text x="924" y="555" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" fill="#babbb5" font-weight="400" text-anchor="end">Checkpoints are periodic</text>
+</svg>

@@ -1,0 +1,2 @@
+Distributed bf16 checkpoint, optimizer, and sampler continuation verified.
+

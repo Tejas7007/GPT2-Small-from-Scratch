@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="1010" viewBox="0 0 960 1010" role="img" aria-labelledby="title desc">
+<title id="title">GPT-2 Small model architecture</title>
+<desc id="desc">Token IDs index learned token embeddings. Learned position embeddings are added and broadcast across the batch. Twelve pre-LayerNorm decoder blocks each apply causal self-attention with 12 heads of width 64 and a residual addition, then a 768 to 3072 GELU MLP and a second residual addition. A final LayerNorm and vocabulary projection tied to token embedding weights produce next-token logits. B is batch size and T is sequence length. Vocabulary size is 50,257 and context length is 1024. The model has 124,439,808 trainable parameters.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#989e97"/></marker></defs>
+<rect width="960" height="1010" fill="#1d2022"/>
+<text x="36" y="55" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" fill="#eeebe5" font-weight="700" text-anchor="start">The model</text>
+<text x="36" y="91" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" fill="#babbb5" font-weight="400" text-anchor="start">GPT-2 Small with learned positions and tied vocabulary weights</text>
+<path d="M 36 118 H 924" fill="none" stroke="#b9a27e" stroke-width="1"/>
+<text x="36" y="149" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" fill="#babbb5" font-weight="400" text-anchor="start">12 layers   ·   12 heads   ·   768 width   ·   1024 context   ·   50,257 vocabulary</text>
+<rect x="64" y="181" width="280" height="72" fill="#25282a" stroke="#515650" stroke-width="1"/>
+<text x="204" y="211" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" fill="#eeebe5" font-weight="500" text-anchor="middle">Token IDs</text>
+<text x="204" y="237" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" fill="#babbb5" font-weight="400" text-anchor="middle">[B, T]</text>
+<path d="M 204 253 V 281" fill="none" stroke="#989e97" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="64" y="293" width="280" height="112" fill="#25282a" stroke="#515650" stroke-width="1"/>
+<text x="204" y="323" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" fill="#eeebe5" font-weight="500" text-anchor="middle">Learned embeddings</text>
+<text x="204" y="349" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" fill="#babbb5" font-weight="400" text-anchor="middle">Token + position vectors</text>
+<text x="204" y="373" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" fill="#babbb5" font-weight="400" text-anchor="middle">Both tables are trainable</text>
+<text x="204" y="392" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" fill="#babbb5" font-weight="400" text-anchor="middle">Positions broadcast across B</text>
+<path d="M 204 405 V 437" fill="none" stroke="#989e97" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="64" y="449" width="280" height="78" fill="#25282a" stroke="#515650" stroke-width="1"/>
+<text x="204" y="479" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" fill="#eeebe5" font-weight="500" text-anchor="middle">Decoder block × 12</text>
+<text x="204" y="505" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" fill="#babbb5" font-weight="400" text-anchor="middle">[B, T, 768]</text>
+<path d="M 204 527 V 559" fill="none" stroke="#989e97" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="64" y="571" width="280" height="64" fill="#25282a" stroke="#515650" stroke-width="1"/>
+<text x="204" y="601" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" fill="#eeebe5" font-weight="500" text-anchor="middle">Final LayerNorm</text>
+<path d="M 204 635 V 667" fill="none" stroke="#989e97" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="64" y="679" width="280" height="78" fill="#25282a" stroke="#515650" stroke-width="1"/>
+<text x="204" y="709" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" fill="#eeebe5" font-weight="500" text-anchor="middle">Tied output projection</text>
+<text x="204" y="735" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" fill="#babbb5" font-weight="400" text-anchor="middle">768 → 50,257</text>
+<path d="M 204 757 V 789" fill="none" stroke="#989e97" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="64" y="801" width="280" height="78" fill="#25282a" stroke="#515650" stroke-width="1"/>
+<text x="204" y="831" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" fill="#eeebe5" font-weight="500" text-anchor="middle">Next-token logits</text>
+<text x="204" y="857" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" fill="#babbb5" font-weight="400" text-anchor="middle">[B, T, 50,257]</text>
+<path d="M 64 331 H 43 V 718 H 64" fill="none" stroke="#515650" stroke-width="1.5" stroke-dasharray="4 4"/>
+<text x="27" y="564" transform="rotate(-90 27 564)" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" fill="#babbb5">Shared token weights</text>
+<path d="M 344 488 H 393" fill="none" stroke="#989e97" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="406" y="181" width="518" height="698" fill="#1d2022" stroke="#515650" stroke-width="1"/>
+<text x="428" y="217" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" fill="#eeebe5" font-weight="500" text-anchor="start">One decoder block</text>
+<text x="902" y="217" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" fill="#babbb5" font-weight="400" text-anchor="end">× 12</text>
+<text x="666" y="256" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" fill="#babbb5" font-weight="400" text-anchor="middle">Hidden states  [B, T, 768]</text>
+<path d="M 666 266 V 276" fill="none" stroke="#989e97" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="540" y="284" width="252" height="52" fill="#25282a" stroke="#515650" stroke-width="1"/>
+<text x="666" y="317" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" fill="#eeebe5" font-weight="400" text-anchor="middle">LayerNorm</text>
+<path d="M 666 336 V 362" fill="none" stroke="#989e97" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="498" y="374" width="336" height="96" fill="#25282a" stroke="#515650" stroke-width="1"/>
+<text x="666" y="409" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" fill="#eeebe5" font-weight="500" text-anchor="middle">Causal self-attention</text>
+<text x="666" y="441" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" fill="#babbb5" font-weight="400" text-anchor="middle">Q K V each [B, 12, T, 64]</text>
+<path d="M 666 470 V 492" fill="none" stroke="#989e97" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M 666 271 H 450 V 510 H 648" fill="none" stroke="#b9a27e" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="439" y="432" transform="rotate(-90 439 432)" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" fill="#babbb5">Identity path</text>
+<circle cx="666" cy="510" r="18" fill="#1d2022" stroke="#b9a27e" stroke-width="1.5"/>
+<text x="666" y="517" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" fill="#eeebe5" font-weight="400" text-anchor="middle">+</text>
+<path d="M 666 528 V 542" fill="none" stroke="#989e97" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="540" y="554" width="252" height="52" fill="#25282a" stroke="#515650" stroke-width="1"/>
+<text x="666" y="587" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" fill="#eeebe5" font-weight="400" text-anchor="middle">LayerNorm</text>
+<path d="M 666 606 V 634" fill="none" stroke="#989e97" stroke-width="1.5" marker-end="url(#arrow)"/>
+<rect x="498" y="646" width="336" height="96" fill="#25282a" stroke="#515650" stroke-width="1"/>
+<text x="666" y="681" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" fill="#eeebe5" font-weight="500" text-anchor="middle">Position-wise MLP</text>
+<text x="666" y="713" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" fill="#babbb5" font-weight="400" text-anchor="middle">768 → 3072 → GELU → 768</text>
+<path d="M 666 742 V 765" fill="none" stroke="#989e97" stroke-width="1.5" marker-end="url(#arrow)"/>
+<path d="M 666 539 H 879 V 784 H 684" fill="none" stroke="#b9a27e" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="897" y="698" transform="rotate(-90 897 698)" font-family="DejaVu Sans, Arial, sans-serif" font-size="13" fill="#babbb5">Identity path</text>
+<circle cx="666" cy="784" r="18" fill="#1d2022" stroke="#b9a27e" stroke-width="1.5"/>
+<text x="666" y="791" font-family="DejaVu Sans, Arial, sans-serif" font-size="24" fill="#eeebe5" font-weight="400" text-anchor="middle">+</text>
+<path d="M 666 802 V 824" fill="none" stroke="#989e97" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text x="666" y="852" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" fill="#babbb5" font-weight="400" text-anchor="middle">Hidden states  [B, T, 768]</text>
+<path d="M 36 909 H 924" fill="none" stroke="#515650" stroke-width="1"/>
+<text x="36" y="945" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" fill="#eeebe5" font-weight="400" text-anchor="start">Pre-LN decoder</text>
+<text x="924" y="945" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" fill="#eeebe5" font-weight="400" text-anchor="end">124,439,808 parameters</text>
+<text x="36" y="978" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" fill="#babbb5" font-weight="400" text-anchor="start">B is batch size   ·   T is sequence length</text>
+</svg>

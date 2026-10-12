@@ -1,0 +1,48 @@
+{
+  "task": "hellaswag",
+  "split": "validation",
+  "fewshot": 0,
+  "dataset": "Rowan/hellaswag",
+  "dataset_revision": "218ec52e09a7e7462a5400043bb9a69a41d06b76",
+  "validation_rows_sha256": "b9e27e4f11dfd40cc22c47eb71ed5dc765fbb9f2ad73ff32cbbb396ffcc040ab",
+  "dataset_fingerprint": "71a62ba9d49be089",
+  "evaluated_examples": 10042,
+  "available_examples": 10042,
+  "complete_validation_sweep": true,
+  "accuracy": 0.28978291177056364,
+  "accuracy_token_normalized": 0.30920135431189005,
+  "accuracy_character_normalized": 0.31159131647082255,
+  "correct_counts": {
+    "sum": 2910,
+    "token_normalized": 3105,
+    "character_normalized": 3129
+  },
+  "standard_error": {
+    "sum": 0.004527118225102224,
+    "token_normalized": 0.0046119684104899295,
+    "character_normalized": 0.004621742386351695
+  },
+  "chance_accuracy": 0.25,
+  "scored_ending_tokens": 1187429,
+  "checkpoint": "openai-community/gpt2",
+  "checkpoint_sha256": null,
+  "reference_revision": "607a30d783dfa663caf39e06633721c8d4cfcd7e",
+  "training_tokens": null,
+  "step": null,
+  "tokenizer": "gpt2",
+  "context_length": 1024,
+  "precision": "bfloat16",
+  "device": "cuda",
+  "batch_size_examples": 8,
+  "evaluation_protocol": "ending-only next-token likelihood; separate prefix and space-prefixed ending BPE; right padding masked; no truncation; first-index argmin ties",
+  "preprocessing_source": "https://github.com/EleutherAI/lm-evaluation-harness/blob/main/lm_eval/tasks/hellaswag/utils.py",
+  "comparability": "Compare checkpoint and reference from this evaluator; tokenizer boundary conventions can differ from other harness versions.",
+  "source_sha256": {
+    "evaluate_hellaswag.py": "94a99d25c8f4e50d393ef27e08a2c7fcc508d138c80102d5dd4f849caae48941",
+    "model.py": "b1feb76a28bba4f27bc6b0c41625145365d5102a17537964fb2bcfce5ea0eae1",
+    "tokenizer.py": "1b782c8e05bd3ebac4c7638d11291051c31b2431aa176829d1ac7dec3f205795"
+  },
+  "predictions_sha256": "c4f4d3b54c45d2c1b646063361ccdfe53d8e9770e5a46520a78b452d3f03ce1a",
+  "seconds": 18.636093195527792
+}
+

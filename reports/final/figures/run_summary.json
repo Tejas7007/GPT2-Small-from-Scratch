@@ -1,0 +1,16 @@
+{
+  "parameters": 124439808,
+  "last_step": 19074,
+  "training_tokens": 10000269312,
+  "last_train_loss": 3.276296377182007,
+  "last_sampled_val_loss": 3.268538236618042,
+  "best_sampled_val_loss": 3.2684104442596436,
+  "median_logged_update_tokens_per_second": 1660135.708139584,
+  "hardware": "NVIDIA H100 80GB HBM3",
+  "precision": "bf16",
+  "world_size": 4,
+  "global_token_batch": 524288,
+  "curve_smoothing": "none",
+  "throughput_scope": "logged updates, excluding validation and checkpoint time",
+  "completed_session_wall_seconds": 6456.0470522381365
+}

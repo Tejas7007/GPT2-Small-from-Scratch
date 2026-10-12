@@ -1,0 +1,22 @@
+{
+  "status": "in_progress",
+  "training_complete": false,
+  "snapshot_step": 2000,
+  "training_tokens": 1048576000,
+  "target_training_tokens": 10000000000,
+  "captured_utc": "2026-10-12T05:11:30.144186+00:00",
+  "files_sha256": {
+    "sessions.jsonl": "f74b63a0a22c8d01c0574bd916af3c9498c7622c2939bdfcbc490705cba00812",
+    "metrics.jsonl": "b4b746d3e18b27ba887663b77bbb475049a880f2c89f46e1528f65a1593ac3c4",
+    "manifest.json": "d7f5b0331f9a715a149a205174ece2f54b48a2e60470cafcacd91abdec1f8cac",
+    "figures/run_summary.json": "ff8ba2b45d7abc881a59a4d1e80ac62bf0a17f413581f7976d992ad26e4fc48d",
+    "figures/runtime.svg": "47777c2e3ef1643092f3f9ca29c5b4602be8e2a803cc3f3884d5df702323205a",
+    "figures/runtime.png": "26f879714747dd8c6aa1b65f8beee29ad67354abf0479d509ab70962e81d767d",
+    "figures/diagnostics.svg": "67156bd16a775af7e600773f985774bdf1690b4eecfd0078fe92e8054341fd42",
+    "figures/diagnostics.png": "f90318ccf862e1396de391adac9fb36291abec129ac48fff7011f2be73169c75",
+    "figures/optimization.svg": "f7aac91abc2c3091249b3a1adac80b7de9d92b52dd2fb3ac2a9d6956ff410226",
+    "figures/optimization.png": "dbcf03f82c730eb2b1daaefc9b6393d5a3cec8067dedcef5ceb640445f7b166c",
+    "figures/loss.svg": "c13ad3218f92d8b84feaedabc6b1761158c32ff0912001c53161b53fbf4df694",
+    "figures/loss.png": "44fbb6780508fdc4aa5b1557b4a1ab160e83abf063d99a6937f0572473b95bdf"
+  }
+}

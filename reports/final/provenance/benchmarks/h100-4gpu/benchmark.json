@@ -1,0 +1,35 @@
+{
+  "candidates": [
+    {
+      "batch_size": 32,
+      "directory": "batch-32",
+      "returncode": 0,
+      "wall_seconds": 108.68088023364544,
+      "measured_updates": 20,
+      "mean_update_seconds": 0.31745484452694656,
+      "median_update_seconds": 0.31685708835721016,
+      "global_tokens_per_second": 1651535.6720457822,
+      "projected_training_hours": 1.681981584585272,
+      "projected_validation_hours": 0.10097402631408639,
+      "projected_checkpoint_hours": 3.961504796261175,
+      "peak_cuda_memory_bytes": 27079281664
+    },
+    {
+      "batch_size": 64,
+      "directory": "batch-64",
+      "returncode": 0,
+      "wall_seconds": 117.5973624959588,
+      "measured_updates": 20,
+      "mean_update_seconds": 0.32366640754044057,
+      "median_update_seconds": 0.3112886771559715,
+      "global_tokens_per_second": 1619840.6377235572,
+      "projected_training_hours": 1.7148925159517676,
+      "projected_validation_hours": 0.09676311684358452,
+      "projected_checkpoint_hours": 0.44485406019310986,
+      "peak_cuda_memory_bytes": 51252719104
+    }
+  ],
+  "recommended_batch_size": 64,
+  "benchmark_wall_seconds": 226.3033583573997,
+  "gpu_performance_measured": true
+}

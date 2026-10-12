@@ -1,0 +1,4 @@
+-r requirements.txt
+datasets>=2.19,<5
+transformers>=4.46,<6
+

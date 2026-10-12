@@ -1,0 +1,21 @@
+{
+  "candidates": [
+    {
+      "batch_size": 64,
+      "directory": "runs/benchmarks/h100-4gpu-staged/batch-64",
+      "returncode": 0,
+      "wall_seconds": 69.64867185428739,
+      "measured_updates": 20,
+      "mean_update_seconds": 0.3116519717499614,
+      "median_update_seconds": 0.3112633191049099,
+      "global_tokens_per_second": 1682286.8055544877,
+      "projected_training_hours": 1.6512360303218787,
+      "projected_validation_hours": 0.029560910900019936,
+      "projected_checkpoint_hours": 0.21260303137203057,
+      "peak_cuda_memory_bytes": 51252719104
+    }
+  ],
+  "recommended_batch_size": 64,
+  "benchmark_wall_seconds": 69.65940110385418,
+  "gpu_performance_measured": true
+}

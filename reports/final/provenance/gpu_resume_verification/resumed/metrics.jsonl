@@ -1,0 +1,19 @@
+{"kind": "val", "step": 0, "tokens_seen": 0, "loss": 5.5870361328125, "perplexity": 266.943261697455, "validation_seconds": 0.19028881192207336}
+{"kind": "train", "step": 1, "tokens_seen": 1024, "loss": 5.5826416015625, "lr": 0.0006, "grad_norm": 5.157415866851807, "seconds": 0.1423705518245697, "elapsed_seconds": 2.3837716095149517, "tokens_per_second": 7192.498637371176, "epoch": 0, "peak_cuda_memory_bytes": 75951616}
+{"kind": "val", "step": 1, "tokens_seen": 1024, "loss": 5.0182952880859375, "perplexity": 151.15341101944796, "best_loss": 5.0182952880859375, "validation_seconds": 0.003134489059448242}
+{"kind": "checkpoint", "step": 1, "checkpoint_seconds": 0.07083353400230408}
+{"kind": "train", "step": 2, "tokens_seen": 2048, "loss": 5.0009307861328125, "lr": 0.0005732615943336531, "grad_norm": 3.461153745651245, "seconds": 0.009191501885652542, "elapsed_seconds": 2.4813227616250515, "tokens_per_second": 111407.25560840181, "epoch": 0, "peak_cuda_memory_bytes": 79080960}
+{"kind": "val", "step": 2, "tokens_seen": 2048, "loss": 4.7815704345703125, "perplexity": 119.29154258194244, "best_loss": 4.7815704345703125, "validation_seconds": 0.002320490777492523}
+{"kind": "checkpoint", "step": 2, "checkpoint_seconds": 0.06724829226732254}
+{"kind": "train", "step": 3, "tokens_seen": 3072, "loss": 4.7734222412109375, "lr": 0.000498342246501858, "grad_norm": 2.6300127506256104, "seconds": 0.009855620563030243, "elapsed_seconds": 2.5750007554888725, "tokens_per_second": 103900.10384948885, "epoch": 0, "peak_cuda_memory_bytes": 79080960}
+{"kind": "train", "step": 4, "tokens_seen": 4096, "loss": 4.65167236328125, "lr": 0.0003900806521682048, "grad_norm": 2.630814790725708, "seconds": 0.012310899794101715, "elapsed_seconds": 2.594056688249111, "tokens_per_second": 83178.32304106718, "epoch": 0, "peak_cuda_memory_bytes": 79080960}
+{"kind": "val", "step": 4, "tokens_seen": 4096, "loss": 4.5869903564453125, "perplexity": 98.19844266688526, "best_loss": 4.5869903564453125, "validation_seconds": 0.00306813046336174}
+{"kind": "checkpoint", "step": 4, "checkpoint_seconds": 0.10729203373193741}
+{"kind": "train", "step": 5, "tokens_seen": 5120, "loss": 4.5560150146484375, "lr": 0.00026991934783179513, "grad_norm": 2.6738924980163574, "seconds": 0.3344970755279064, "elapsed_seconds": 4.906809460371733, "tokens_per_second": 3061.312265238533, "epoch": 0, "peak_cuda_memory_bytes": 79080448}
+{"kind": "train", "step": 6, "tokens_seen": 6144, "loss": 4.4953155517578125, "lr": 0.00016165775349814197, "grad_norm": 2.6847712993621826, "seconds": 0.009658969938755035, "elapsed_seconds": 4.920411843806505, "tokens_per_second": 106015.4453831943, "epoch": 0, "peak_cuda_memory_bytes": 79080960}
+{"kind": "val", "step": 6, "tokens_seen": 6144, "loss": 4.47125244140625, "perplexity": 87.46620073336145, "best_loss": 4.47125244140625, "validation_seconds": 0.0023569799959659576}
+{"kind": "checkpoint", "step": 6, "checkpoint_seconds": 0.20912600681185722}
+{"kind": "train", "step": 7, "tokens_seen": 7168, "loss": 4.452301025390625, "lr": 8.673840566634686e-05, "grad_norm": 2.708456516265869, "seconds": 0.01810266450047493, "elapsed_seconds": 5.166670687496662, "tokens_per_second": 56566.258518083625, "epoch": 0, "peak_cuda_memory_bytes": 79080960}
+{"kind": "train", "step": 8, "tokens_seen": 8192, "loss": 4.4255218505859375, "lr": 5.9999999999999995e-05, "grad_norm": 2.7056427001953125, "seconds": 0.017834041267633438, "elapsed_seconds": 5.188776269555092, "tokens_per_second": 57418.28139976509, "epoch": 0, "peak_cuda_memory_bytes": 79080960}
+{"kind": "val", "step": 8, "tokens_seen": 8192, "loss": 4.4195556640625, "perplexity": 83.05937089430515, "best_loss": 4.4195556640625, "validation_seconds": 0.0066332705318927765}
+{"kind": "checkpoint", "step": 8, "checkpoint_seconds": 0.19501635059714317}

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="365" viewBox="0 0 960 365" role="img" aria-labelledby="title desc">
+<title id="title">Measured training and evaluation results</title>
+<desc id="desc">Training ended at step 19,074 after 10,000,269,312 tokens. The checkpoint at step 19,000 scored full heldout perplexity 26.222994 on 99,997,696 tokens and token-normalized HellaSwag accuracy 31.886078 percent on all 10,042 validation examples. Training took 107.600784 minutes, including startup, validation, and checkpoint saves. </desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#989e97"/></marker></defs>
+<rect width="960" height="365" fill="#1d2022"/>
+<text x="36" y="54" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" fill="#eeebe5" font-weight="700" text-anchor="start">Measured results</text>
+<text x="36" y="91" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" fill="#babbb5" font-weight="400" text-anchor="start">Training run and selected checkpoint scores</text>
+<path d="M 36 118 H 924" fill="none" stroke="#b9a27e" stroke-width="1"/>
+<text x="36" y="174" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" fill="#eeebe5" font-weight="700" text-anchor="start">10.0003B</text>
+<text x="36" y="210" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" fill="#eeebe5" font-weight="400" text-anchor="start">Training tokens</text>
+<text x="36" y="236" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" fill="#babbb5" font-weight="400" text-anchor="start">processed</text>
+<text x="264" y="174" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" fill="#eeebe5" font-weight="700" text-anchor="start">26.22</text>
+<text x="264" y="210" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" fill="#eeebe5" font-weight="400" text-anchor="start">Full heldout</text>
+<text x="264" y="236" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" fill="#babbb5" font-weight="400" text-anchor="start">perplexity</text>
+<path d="M 244 142 V 240" fill="none" stroke="#515650" stroke-width="1"/>
+<text x="492" y="174" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" fill="#eeebe5" font-weight="700" text-anchor="start">31.89%</text>
+<text x="492" y="210" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" fill="#eeebe5" font-weight="400" text-anchor="start">HellaSwag</text>
+<text x="492" y="236" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" fill="#babbb5" font-weight="400" text-anchor="start">token-normalized</text>
+<path d="M 472 142 V 240" fill="none" stroke="#515650" stroke-width="1"/>
+<text x="720" y="174" font-family="DejaVu Sans, Arial, sans-serif" font-size="30" fill="#eeebe5" font-weight="700" text-anchor="start">107.6 min</text>
+<text x="720" y="210" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" fill="#eeebe5" font-weight="400" text-anchor="start">Training time</text>
+<text x="720" y="236" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" fill="#babbb5" font-weight="400" text-anchor="start">includes validation</text>
+<path d="M 700 142 V 240" fill="none" stroke="#515650" stroke-width="1"/>
+<path d="M 36 267 H 924" fill="none" stroke="#515650" stroke-width="1"/>
+<text x="36" y="302" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" fill="#babbb5" font-weight="400" text-anchor="start">Heldout evaluation uses 99,997,696 tokens</text>
+<text x="36" y="333" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" fill="#babbb5" font-weight="400" text-anchor="start">HellaSwag uses all 10,042 validation examples</text>
+</svg>

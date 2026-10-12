@@ -1,0 +1,7 @@
+{
+  "status": "complete",
+  "exit_code": 0,
+  "timeout_seconds": 600,
+  "cached_reference_comparable": true,
+  "reference_policy": "Use the cached complete matching reference; never launch another reference sweep."
+}

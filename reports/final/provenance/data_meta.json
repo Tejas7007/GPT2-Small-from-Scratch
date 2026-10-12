@@ -1,0 +1,38 @@
+{
+  "tokenizer": "gpt2",
+  "vocab_size": 50257,
+  "dtype": "<u2",
+  "tokens": {
+    "train": 9900003494,
+    "val": 99997824
+  },
+  "documents": 14357844,
+  "sha256": {
+    "train": "a6f40bf04cfe1b832f51f92cc600541a556d4c1053de2a8292034f1cdbbdfc93",
+    "val": "72f4cd05c2687f8fe164b188fb41b6d671e6bd3129eafb3ece9c3b29af74924c"
+  },
+  "source": "HuggingFaceFW/fineweb",
+  "hf_config": "sample-10BT",
+  "hf_split": "train",
+  "hf_revision": "9bb295ddab0e05d785b879661af7260fed5140fc",
+  "consumed_parquet_shards": [
+    "sample/10BT/000_00000.parquet",
+    "sample/10BT/001_00000.parquet",
+    "sample/10BT/002_00000.parquet",
+    "sample/10BT/003_00000.parquet",
+    "sample/10BT/004_00000.parquet",
+    "sample/10BT/005_00000.parquet",
+    "sample/10BT/006_00000.parquet",
+    "sample/10BT/007_00000.parquet",
+    "sample/10BT/008_00000.parquet",
+    "sample/10BT/009_00000.parquet",
+    "sample/10BT/010_00000.parquet",
+    "sample/10BT/011_00000.parquet",
+    "sample/10BT/012_00000.parquet",
+    "sample/10BT/013_00000.parquet"
+  ],
+  "tokenizer_workers": 96,
+  "tokenization_batch_size": 4096,
+  "val_fraction": 0.01,
+  "split_method": "blake2b document hash"
+}

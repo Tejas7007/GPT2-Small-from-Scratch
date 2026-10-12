@@ -1,0 +1,19 @@
+{
+  "checkpoint": "best.pt",
+  "reference_revision": null,
+  "step": 19000,
+  "training_tokens": 9961472000,
+  "loss": 3.2666366545780527,
+  "perplexity": 26.222993871989598,
+  "scored_tokens": 99997696,
+  "evaluated_windows": 97654,
+  "available_windows": 97654,
+  "complete_window_sweep": true,
+  "unscored_token_tail": 127,
+  "context_length": 1024,
+  "evaluation_protocol": "non-overlapping contexts; one-token-ahead targets; document boundaries unmasked",
+  "tokenizer": "gpt2",
+  "validation_sha256": "72f4cd05c2687f8fe164b188fb41b6d671e6bd3129eafb3ece9c3b29af74924c",
+  "precision": "torch.bfloat16",
+  "seconds": 164.93837648630142
+}

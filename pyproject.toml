@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gpt2-scratch"
+version = "1.0.0"
+description = "GPT-2 from random initialization with reproducible training and measured evaluation"
+readme = "README.md"
+requires-python = ">=3.10"
+dynamic = ["dependencies"]
+
+[project.optional-dependencies]
+data = ["datasets>=2.19,<5"]
+eval = ["transformers>=4.46,<6", "datasets>=2.19,<5"]
+dev = ["ruff>=0.8,<1"]
+
+[tool.setuptools]
+packages = ["gpt2"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
+
+[tool.ruff.format]
+quote-style = "double"
+

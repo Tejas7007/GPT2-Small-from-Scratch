@@ -1,0 +1,10 @@
+{
+  "kind": "full_checkpoint_storage_probe",
+  "staging": "/dev/shm",
+  "bytes": 1493516991,
+  "load_seconds": 2.965286135673523,
+  "durable_save_seconds": 4.569685235619545,
+  "model_bytes_equal": true,
+  "step": 30
+}
+
